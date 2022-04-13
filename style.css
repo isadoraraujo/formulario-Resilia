@@ -6,22 +6,34 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: black;
     font-family: 'Quattrocento Sans', sans-serif;
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 .cabecalho {
     background-color: rgb(255, 253, 253);
+  
     width: 100%;
-    height: 80px;
+    max-width: 1560px;
+    
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     padding: 25px 34px;
 }
 
 .resilia {
-    height: 38px;
+    height: 39px;
 }
 
 .redes-sociais {
@@ -29,7 +41,7 @@ body {
 }
 
 .icon {
-    height: 18px;
+    height: 19px;
     padding-right: 7px;
 
     cursor: pointer;
@@ -37,10 +49,11 @@ body {
 
 .container {
     background-color: white;
-    width: 40%;
+    width: 40vw;
+    height: 85vh;
+    
     margin: 0 auto;
     margin-top: 35px;
-    height: 560px;
     border-radius: 25px;
     padding: 30px;
 }
@@ -51,7 +64,7 @@ body {
 
 h1 {
     padding-bottom: 20px;
-    font-size: 45px;
+    font-size: 3.6rem;
     color:rgb(255, 194, 32);
 }
 
@@ -61,7 +74,7 @@ h1 {
 
 p {
     color: rgb(61, 61, 61);
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .principal {
@@ -73,12 +86,12 @@ p {
 
 .dados label {
     display: block;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: rgb(104, 100, 100);
 }
 
 input {
-    height: 35px; 
+    height: 39px; 
     width: 100%;
     padding-left: 10px;
     margin-top: 5px;
@@ -114,6 +127,43 @@ footer {
     bottom: 15px;
     right: 35pt;
     width: 35px;
-
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        width: 70%;
+        height: max-content;
+    }
+
+    footer img {
+        width: 55px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .container {
+        width: min-content;
+        height: max-content;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    footer {
+        right: 5%;
+    }
+
+    footer img {
+        width: 100%;
+        height: 100%;
+    }
+}
